@@ -9,11 +9,11 @@ import Page from "./components/Page";
 function App() {
   return (
     <Page>
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/login" element={<Login />} />
-      <Route path="*" element={<Error404 />} />
-    </Routes>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="*" element={<Error404 />} />
+      </Routes>
     </Page>
   );
 }
