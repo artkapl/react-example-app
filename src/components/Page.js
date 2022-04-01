@@ -3,16 +3,14 @@ import Footer from "./Footer";
 import Navigation from "./Navigation";
 
 function Page(props) {
-    return (
-        // empty <> is React Fragment, wird nicht gerendert
-        <>
-            <Navigation />
-            <Container>
-                {props.children}
-            </Container>
-            <Footer />
-        </>
-    )
+  return (
+    // empty <> is React Fragment, wird nicht gerendert
+    <>
+      <Navigation />
+      <Container>{props.children}</Container>
+      <Footer />
+    </>
+  );
 }
 
 export default Page;
