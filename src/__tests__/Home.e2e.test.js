@@ -16,9 +16,9 @@ describe("When a user navigates to '/' and changes the input and clicks the butt
     it("should render the page correctly and add a new item to the list", async () => {
     await page.goto("http://localhost:3000/");
     // only works if server runs on 3000
-    await page.waitForSelector("input[id=fruitName]");
-    await page.$eval("input[id=fruitName]", (el) => (el.value = "abc"));
-
+    await page.waitForSelector("#fruitName");
+    await page.$eval("#fruitName", (el) => (el.value = "abc"));
+    await page.$eval("#addFruitName", (el) => el.click());
   });
 });
 
