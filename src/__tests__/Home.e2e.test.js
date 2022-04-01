@@ -22,10 +22,3 @@ describe("When a user navigates to '/' and changes the input and clicks the butt
   });
 });
 
-// smoke tests = run when a new version is pushed to production 
-    // --> if smoke, rollback to old version
-    // can set page.goto("htt://actualproductionserver")
-    // if test fails, CI/CD immediately rolls back version
-    // used for continuous deployment
-    // often ~20 deployments per DAY!
-    // also used: canary testing --> let small % of users test feature
