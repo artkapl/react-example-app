@@ -26,7 +26,7 @@ function Home() {
     fetchFromApi();
   }, []);
   return (
-    <Page>
+    <>
         <Form>
           <Form.Group>
             <Form.Label htmlFor="fruitName">Fruit Name</Form.Label>
@@ -50,7 +50,7 @@ function Home() {
         {fruits.map((fruit) => {
           return <div key={fruit.name}>{fruit.name}</div>;
         })}
-    </Page>
+    </>
   );
 }
 

@@ -3,9 +3,9 @@ import Page from "../components/Page";
 
 function Error404() {
     return (
-        <Page>
+        <>
             404: Not Found!
-        </Page>
+        </>
     );
 }
 
