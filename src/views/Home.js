@@ -1,7 +1,7 @@
 // const [text, setText] = useState("Hello World");
-  // erster Wert von array ist state, 2. ist Funktion, die state setzen kann
+// erster Wert von array ist state, 2. ist Funktion, die state setzen kann
 
-  // async functions müssen immerhalb von useEffect() verwendet werden
+// async functions müssen immerhalb von useEffect() verwendet werden
 // const [fruits, setFruits] = useState([]);
 
 import { useEffect, useState } from "react";
@@ -27,29 +27,29 @@ function Home() {
   }, []);
   return (
     <>
-        <Form>
-          <Form.Group>
-            <Form.Label htmlFor="fruitName">Fruit Name</Form.Label>
-            <Form.Control
-              id="fruitName"
-              type="text"
-              value={text}
-              onChange={(e) => setText(e.target.value)}
-            />
-          </Form.Group>
-          <Form.Group>
-            <Button
-              onClick={() => {
-                setFruits((oldFruits) => [...oldFruits, { name: text }]);
-              }}
-            >
-              Create New Fruit
-            </Button>
-          </Form.Group>
-        </Form>
-        {fruits.map((fruit) => {
-          return <div key={fruit.name}>{fruit.name}</div>;
-        })}
+      <Form>
+        <Form.Group>
+          <Form.Label htmlFor="fruitName">Fruit Name</Form.Label>
+          <Form.Control
+            id="fruitName"
+            type="text"
+            value={text}
+            onChange={(e) => setText(e.target.value)}
+          />
+        </Form.Group>
+        <Form.Group>
+          <Button
+            onClick={() => {
+              setFruits((oldFruits) => [...oldFruits, { name: text }]);
+            }}
+          >
+            Create New Fruit
+          </Button>
+        </Form.Group>
+      </Form>
+      {fruits.map((fruit) => {
+        return <div key={fruit.name}>{fruit.name}</div>;
+      })}
     </>
   );
 }
