@@ -39,6 +39,7 @@ function Home() {
         </Form.Group>
         <Form.Group>
           <Button
+            id="addFruitName"
             onClick={() => {
               setFruits((oldFruits) => [...oldFruits, { name: text }]);
             }}
